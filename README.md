@@ -28,8 +28,6 @@ dubbo.protocol.port = 20880
 #这里是zk的连接配置  
 dubbo.registry.address = zookeeper://IP:2181  
 
-
-
 # dubbo服务消费者dubbo相关配置  
 #Spring boot application  
 spring.application.name = snail-product-service  
@@ -45,7 +43,8 @@ dubbo.protocol.port = 20880
 #这里是zk的连接配置  
 dubbo.registry.address = zookeeper://IP:2181  
 
-# dubbo服务提供者POM文件配置snail-product-parent/pom.xml  
+# dubbo服务提供者POM文件配置  
+snail-product-parent/pom.xml增加
 <dependency>  
 	<groupId>com.alibaba.boot</groupId>  
 	<artifactId>dubbo-spring-boot-starter</artifactId>  
