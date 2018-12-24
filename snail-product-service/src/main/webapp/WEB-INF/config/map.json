@@ -1,0 +1,101 @@
+{
+    "res": {
+        "page/index.vm": {
+            "uri": "/page/index.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "static/js/index.js": {
+            "uri": "/static/js/index_064e10a.js",
+            "type": "js"
+        },
+        "static/less/index.less": {
+            "uri": "/static/less/index_143ea33.css",
+            "type": "css"
+        },
+        "page/insurance/detail.vm": {
+            "uri": "/page/insurance/detail.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/application.vm": {
+            "uri": "/page/layout/application.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "static/less/distribution.less": {
+            "uri": "/static/less/distribution_2615278.css",
+            "type": "css"
+        },
+        "static/js/distribution.js": {
+            "uri": "/static/js/distribution_a3d2e91.js",
+            "type": "js"
+        },
+        "widget/proDtl.vm": {
+            "uri": "/widget/proDtl.vm",
+            "type": "vm"
+        },
+        "widget/clauses.vm": {
+            "uri": "/widget/clauses.vm",
+            "type": "vm"
+        },
+        "widget/feature.vm": {
+            "uri": "/widget/feature.vm",
+            "type": "vm"
+        },
+        "widget/file.vm": {
+            "uri": "/widget/file.vm",
+            "type": "vm"
+        },
+        "widget/bottom_banner.vm": {
+            "uri": "/widget/bottom_banner.vm",
+            "type": "vm"
+        },
+        "static/js/insurance_detail.js": {
+            "uri": "/static/js/insurance_detail_4e84d81.js",
+            "type": "js"
+        },
+        "page/insurance/show.vm": {
+            "uri": "/page/insurance/show.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "static/js/clsIDCard.js": {
+            "uri": "/static/js/clsIDCard_f64aba6.js",
+            "type": "js"
+        },
+        "static/js/count.js": {
+            "uri": "/static/js/count_e50173e.js",
+            "type": "js"
+        },
+        "static/js/distribution-c.js": {
+            "uri": "/static/js/distribution-c_fd3cf54.js",
+            "type": "js"
+        },
+        "static/js/distribution-e.js": {
+            "uri": "/static/js/distribution-e_00c1d34.js",
+            "type": "js"
+        },
+        "static/js/scroll.js": {
+            "uri": "/static/js/scroll_82d7838.js",
+            "type": "js"
+        },
+        "static/less/layout-1.0.0.less": {
+            "uri": "/static/less/layout-1.0.0_d41d8cd.css",
+            "type": "css"
+        },
+        "static/less/theme-1.0.0.less": {
+            "uri": "/static/less/theme-1.0.0_04e1ef3.css",
+            "type": "css"
+        }
+    },
+    "pkg": {}
+}

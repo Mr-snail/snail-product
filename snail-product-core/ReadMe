@@ -1,0 +1,1 @@
+生成mapper映射文件  执行mvn mybatis-generator:generate

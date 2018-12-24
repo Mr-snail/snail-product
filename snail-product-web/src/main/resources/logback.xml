@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="file"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>@log.dir@/snail-product-web.log</file>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>[snail-product-web] %d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
+		</encoder>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>@log.dir@/snail-product-web.%d{yyyy-MM-dd}.log</FileNamePattern>
+		</rollingPolicy>
+	</appender>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>[snail-product-web] %d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</Pattern>
+		</encoder>
+	</appender>
+
+	<logger name="com.snail" level="${log.level}" />
+	<logger name="org.springframework" level="info" />
+	<root level="info">
+		<appender-ref ref="file" />
+		<appender-ref ref="STDOUT" />
+	</root>
+
+	<appender name="qualityLogAppender"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>@log.dir@/snail-product-web_quality_access.log</file>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>%msg%n</pattern>
+		</encoder>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>@log.dir@/snail-product-web_quality_access.%d{yyyy-MM-dd}.log</FileNamePattern>
+		</rollingPolicy>
+	</appender>
+
+	 
+</configuration>
