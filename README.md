@@ -44,17 +44,20 @@ dubbo.protocol.port = 20880
 dubbo.registry.address = zookeeper://IP:2181  
 
 # dubbo服务提供者POM文件配置  
-snail-product-parent/pom.xml增加
-<dependency>  
-	<groupId>com.alibaba.boot</groupId>  
-	<artifactId>dubbo-spring-boot-starter</artifactId>  
-	<version>0.1.0</version>  
-</dependency>  
-<dependency>  
-	<groupId>com.alibaba</groupId>  
-	<artifactId>dubbo</artifactId>  
-	<version>2.6.5</version>  
-</dependency>  
+#snail-product-parent/pom.xml增加
+```xml
+<dependency>
+	<groupId>com.alibaba.boot</groupId>
+	<artifactId>dubbo-spring-boot-starter</artifactId>
+	<version>0.1.0</version>
+</dependency>
+<dependency>
+	<groupId>com.alibaba</groupId>
+	<artifactId>dubbo</artifactId>
+	<version>2.6.5</version>
+</dependency>
+```
+
 
 ##注意：从现在开始, dubbo-spring-boot-project 将在每个发布中发行两个版本 :  
 0.2.x 是支持 Spring Boot 2.x 的主要版本（推荐，长期维护）  
