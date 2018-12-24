@@ -20,11 +20,9 @@ snail-product-web/src/main/resources/application.properties
 # Spring boot application
 spring.application.name = snail-product-web
 #management.port = 9091
-# Base packages to scan Dubbo Components (e.g., @Service, @Reference)
 # 需要扫描的包
 dubbo.scan.basePackages  = com.snail.product.service
 # Dubbo Config properties
-# ApplicationConfig Bean
 dubbo.application.id = snail-product-consumer
 dubbo.application.name = snail-product-consumer
 # ProtocolConfig Bean
@@ -39,11 +37,9 @@ dubbo.registry.address = zookeeper://IP:2181
 #dubbo服务消费者dubbo相关配置
 # Spring boot application
 spring.application.name = snail-product-service
-# Base packages to scan Dubbo Components (e.g., @Service, @Reference)
 # 需要扫描的包
 dubbo.scan.basePackages  = com.snail.product.service
 # Dubbo Config properties
-# ApplicationConfig Bean
 dubbo.application.id = snail-product-provider
 dubbo.application.name = snail-product-provider
 # ProtocolConfig Bean
