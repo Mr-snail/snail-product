@@ -14,42 +14,40 @@
 1. snail-product-service : 8933
 2. snail-product-web : 8934
 
-##dubbo服务提供者dubbo相关配置
+## dubbo服务提供者dubbo相关配置
 snail-product-web/src/main/resources/application.properties
-# Dubbo 服务消费者配置
-# Spring boot application
+#Dubbo 服务消费者配置
 spring.application.name = snail-product-web
-#management.port = 9091
-# 需要扫描的包
+#需要扫描的包
 dubbo.scan.basePackages  = com.snail.product.service
-# Dubbo Config properties
+#Dubbo Config properties
 dubbo.application.id = snail-product-consumer
 dubbo.application.name = snail-product-consumer
-# ProtocolConfig Bean
+#ProtocolConfig Bean
 dubbo.protocol.id = dubbo
 dubbo.protocol.name = dubbo
 dubbo.protocol.port = 20880
-# 这里是zk的连接配置
+#这里是zk的连接配置
 dubbo.registry.address = zookeeper://IP:2181
 
 
 
-#dubbo服务消费者dubbo相关配置
-# Spring boot application
+# dubbo服务消费者dubbo相关配置
+#Spring boot application
 spring.application.name = snail-product-service
-# 需要扫描的包
+#需要扫描的包
 dubbo.scan.basePackages  = com.snail.product.service
-# Dubbo Config properties
+#Dubbo Config properties
 dubbo.application.id = snail-product-provider
 dubbo.application.name = snail-product-provider
-# ProtocolConfig Bean
+#ProtocolConfig Bean
 dubbo.protocol.id = dubbo
 dubbo.protocol.name = dubbo
 dubbo.protocol.port = 20880
-# 这里是zk的连接配置
+#这里是zk的连接配置
 dubbo.registry.address = zookeeper://IP:2181
 
-#dubbo服务提供者POM文件配置snail-product-parent/pom.xml
+# dubbo服务提供者POM文件配置snail-product-parent/pom.xml
 <dependency>
 	<groupId>com.alibaba.boot</groupId>
 	<artifactId>dubbo-spring-boot-starter</artifactId>
@@ -67,7 +65,7 @@ dubbo.registry.address = zookeeper://IP:2181
 具体查看https://github.com/apache/incubator-dubbo-spring-boot-project/blob/master/README_CN.md
 
 
-##启动项目
+## 启动项目
 1、先启动提供者。右键run as snail-product-service项目的src/main/java/com/snail/product/service/SnailProductServiceApplication.java
 2、再启动消费者。右键run as snail-product-web项目的src/main/java/com/snail/product/web/SnailProductWebApplication.java
 #访问地址：
