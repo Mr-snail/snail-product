@@ -3,7 +3,7 @@
 
 ## 包含模块
 
-1.snail-product-core：放置公用接口，该项目将被依赖snail-product-web、snail-product-service依赖。
+1.snail-product-core：放置公用接口，该项目将被依赖snail-product-web、snail-product-service依赖
 2.snail-product-parent:公用资源
 3.snail-product-service：dubbo服务提供者
 4.snail-product-web:dubbo消费者
