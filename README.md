@@ -71,7 +71,7 @@ dubbo.registry.address = zookeeper://IP:2181
 #访问地址：  
 1、IP:8933/product/getProductList  
 2、IP:8933/product/sayHello  
-#最好是搭建一个dubbo管控台,这个就执行百度啦  
+#最好是搭建一个dubbo管控台,这个就自己百度啦  
 
 
 
